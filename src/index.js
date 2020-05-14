@@ -4,7 +4,7 @@ let toyCollectionDiv = document.getElementById('toy-collection')
 function main() {
   getToys()
   newToyListener()
-  likeToy()
+  likeToyListener()
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -97,35 +97,37 @@ function newToyListener() {
   })  
 }
 
-function likeToy() {
-  document.addEventListener('click', function(event) {
+function likeToy(toyCard) {
+  const toysUrlId = `http://localhost:3000/toys/${toyCard.id}`
 
+  const submitData = {
+    likes: toyCard.likes
+  }
+
+  const configObj = {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json'
+    },
+    body: JSON.stringify(submitData)
+  }
+
+  fetch(toysUrlId, configObj)
+    .then(response => {
+      return response.json()
+    })
+    .then(toys => {
+      toyCard.querySelector('p').innerText = `${toyCard.likes} Likes`
+    })
+}
+
+function likeToyListener() {
+  document.addEventListener('click', function(event) {
     if (event.target.className === 'like-btn') {
       let toyCard = event.target.parentNode
       toyCard.likes += 1
-
-      const toysUrlId = `http://localhost:3000/toys/${toyCard.id}`
-
-      const submitData = {
-        likes: toyCard.likes
-      }
-
-      const configObj = {
-        method: 'PATCH',
-        headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
-        },
-        body: JSON.stringify(submitData)
-      }
-
-      fetch(toysUrlId, configObj)
-        .then(response => {
-          return response.json()
-        })
-        .then(toys => {
-          toyCard.querySelector('p').innerText = `${toyCard.likes} Likes`
-        })
+      likeToy(toyCard)
     }
   })
 }
