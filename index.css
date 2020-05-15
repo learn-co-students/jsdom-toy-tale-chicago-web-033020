@@ -26,7 +26,7 @@ body {
   border: grey solid 1px;
   padding: 1rem;
   width: 15rem;
-  height: 25rem;
+  height: 28rem;
   display: inline-grid;
   margin: 1rem 2rem;
   box-shadow: 3px 4px #e04b52
@@ -34,8 +34,9 @@ body {
 
 .toy-avatar {
   justify-self: center;
-  height: 12rem;
-  width: auto;
+  height: 15rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 button {
@@ -44,16 +45,20 @@ button {
   border: none;
   border-radius: 5px;
   height: 3rem;
-  width: max-content;
   color: whitesmoke;
   font-size: 18px;
-  justify-self: center;
 }
 
 button:hover {
   background-color: whitesmoke;
   border: #e04b52 solid 1px;
   color: #e04b52;
+}
+
+.delete-btn {
+  background-color: gray;
+  font-size: 10px;
+  height: 1.5rem;
 }
 
 .container {
