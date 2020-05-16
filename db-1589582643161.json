@@ -53,6 +53,18 @@
       "image": "https://upload.wikimedia.org/wikipedia/en/8/87/Jessie_%28Toy_Story%29.png",
       "likes": 0,
       "id": 9
+    },
+    {
+      "name": "Joanna",
+      "image": "asdfasdf",
+      "likes": 0,
+      "id": 10
+    },
+    {
+      "name": "winston",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71ko1ywPZXL._AC_SX522_.jpg",
+      "likes": 0,
+      "id": 11
     }
   ]
 }
