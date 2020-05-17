@@ -105,6 +105,9 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch(`http://localhost:3000/toys/${event.target.parentNode.id}`, formObj)
     .then(response => response.json())
     .then(likes => likes)
+
+    likesElement.innerText = `${updatedLikes} Likes`
+
   }
 
   function deleteToy(event) {
