@@ -4,13 +4,13 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 5
+      "likes": 8
     },
     {
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 8
+      "likes": 9
     },
     {
       "id": 3,
@@ -65,6 +65,18 @@
       "image": "jax.com",
       "likes": 0,
       "id": 11
+    },
+    {
+      "name": "power rangers",
+      "image": "powerranger.com",
+      "likes": 0,
+      "id": 12
+    },
+    {
+      "name": "mario",
+      "image": "mario.com",
+      "likes": 1,
+      "id": 13
     }
   ]
 }
