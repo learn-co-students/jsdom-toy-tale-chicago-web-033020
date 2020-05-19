@@ -19,6 +19,8 @@ body {
 
 #toy-collection {
   margin: 2rem;
+  border: blue solid 1px;
+  box-shadow: 3px 4px #21083d
 }
 
 .card {
