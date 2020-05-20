@@ -4,13 +4,13 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 5
+      "likes": 11
     },
     {
       "id": 2,
       "name": "Buzz Lightyear",
       "image": "http://www.pngmart.com/files/6/Buzz-Lightyear-PNG-Transparent-Picture.png",
-      "likes": 8
+      "likes": 13
     },
     {
       "id": 3,
@@ -47,6 +47,30 @@
       "name": "Little Green Men",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
       "likes": -2
+    },
+    {
+      "name": "john's toy",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Web_of_Spider-Man_Vol_1_129-1.png/250px-Web_of_Spider-Man_Vol_1_129-1.png",
+      "likes": 0,
+      "id": 9
+    },
+    {
+      "name": "john's second toy",
+      "image": "https://www.gannett-cdn.com/presto/2019/09/27/USAT/1017cc46-1a24-4864-846e-9bd4ac2401b1-VPCLIFE_SPIDERMAN_BACK_AT_MCU_DESK_THUMB.jpg?width=660&height=372&fit=crop&format=pjpg&auto=webp",
+      "likes": 2,
+      "id": 10
+    },
+    {
+      "name": "avatar aang",
+      "image": "https://m.media-amazon.com/images/M/MV5BOTMwMzM3Y2ItZjc4Ni00MDlkLThmOWUtYTk1ZjliNjEzYTUwXkEyXkFqcGdeQXVyNzU1NzE3NTg@._V1_CR0,45,480,270_AL_UX477_CR0,0,477,268_AL_.jpg",
+      "likes": 3,
+      "id": 11
+    },
+    {
+      "name": "aapa",
+      "image": "https://i.pinimg.com/originals/1a/1d/88/1a1d88a880db8670c804e130d7be20d0.png",
+      "likes": 1,
+      "id": 12
     }
   ]
 }
