@@ -4,7 +4,7 @@
       "id": 1,
       "name": "Woody",
       "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-      "likes": 7
+      "likes": 9
     },
     {
       "id": 2,
@@ -22,7 +22,7 @@
       "id": 4,
       "name": "Slinky Dog",
       "image": "https://www.freeiconspng.com/uploads/slinky-png-transparent-1.png",
-      "likes": 4
+      "likes": 5
     },
     {
       "id": 5,
@@ -41,18 +41,6 @@
       "name": "Hamm",
       "image": "https://cdn140.picsart.com/244090226021212.png?r1024x1024",
       "likes": 0
-    },
-    {
-      "id": 8,
-      "name": "Little Green Men",
-      "image": "http://www.pngmart.com/files/3/Toy-Story-Alien-PNG-File.png",
-      "likes": -2
-    },
-    {
-      "name": "Jessie",
-      "image": "https://upload.wikimedia.org/wikipedia/en/8/87/Jessie_%28Toy_Story%29.png",
-      "likes": 0,
-      "id": 9
     }
   ]
 }
