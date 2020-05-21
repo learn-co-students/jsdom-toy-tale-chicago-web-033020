@@ -30,18 +30,20 @@ const getToys = () => {
   fetch(toysURL)
   .then(resp => resp.json())
   .then(toys => toys.forEach(renderToy))
-  
+
 }
 
 const newToy = () => {
   
   toyForm.addEventListener("submit", function(){
+    console.log(event)
     event.preventDefault()
     const toyData = {
       name: event.target[0].value,
-      image: event.target[1].value,
+      image: event.target["image"].value,
       likes: 0
     }
+    console.log(toyData)
     const reqObj = {
       method: "POST",
       headers: {
@@ -60,7 +62,7 @@ const newToy = () => {
 const newLike = () => {
 
   toyCollection.addEventListener("click", function(event){
-    const likeBtn = document.querySelector(".like-btn")
+    // const likeBtn = document.querySelector(".like-btn") queryselector only grabs the first one
     if(event.target.className === "like-btn"){
         increaseLike(event)
       }
@@ -68,8 +70,9 @@ const newLike = () => {
 
   const increaseLike = () => {
     const totalLikes = event.target.previousElementSibling
+    
     const addLike = parseInt(totalLikes.innerHTML) + 1
-
+    console.log(addLike)
     const reqObj = {
       method: "PATCH",
       headers: {
@@ -85,7 +88,8 @@ const newLike = () => {
 
     fetch(`http://localhost:3000/toys/${id}`, reqObj)
     .then(resp => resp.json())
-    .then(likeNum => totalLikes.innerHTML = `${addLike} Like(s)`)
+    .then(likeNum => {
+      return totalLikes.innerHTML = `${addLike} Like(s)`})
    
 }
 }
